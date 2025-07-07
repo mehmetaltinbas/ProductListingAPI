@@ -18,7 +18,9 @@ async function loadControllers() {
                 app.use(`/${route}`, controller.default);
                 console.log(`loaded controller: ${route}`);
             })
-            .catch((err) => console.error(`\n\tError loading the controller ${controller}\n`, err));
+            .catch((err) =>
+                console.error(`\n\tError loading the controller ${controller}\n`, err)
+            );
     }
     console.log('');
 }

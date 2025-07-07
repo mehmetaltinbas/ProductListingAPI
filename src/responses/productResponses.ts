@@ -1,6 +1,6 @@
-import { Product } from "../interfaces/productInterface";
-import { ResponseBase } from "./ResponseBase";
+import { Product } from '../interfaces/productInterface';
+import { ResponseBase } from './ResponseBase';
 
-export interface GetAllProductsResponse extends ResponseBase {
-    products: Product[];
+export interface ReadAllProductsResponse extends ResponseBase {
+    products?: Product[];
 }
