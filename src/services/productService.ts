@@ -44,7 +44,7 @@ const ReadAllProductsFilteredByPopularityScore = async function (min: number | u
 const getProductsAsync = async function (): Promise<Product[]> {
     const goldPricePerGramUSD = await getGoldPricePerGramUSDAsync();
     products.forEach((product: Product) => {
-        product.price = (product.popularityScore + 1) * product.weight * goldPricePerGramUSD;
+        product.price = Number(((product.popularityScore + 1) * product.weight * goldPricePerGramUSD).toFixed(2));
     });
     return products;
 };
