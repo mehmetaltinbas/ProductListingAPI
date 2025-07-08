@@ -3,7 +3,7 @@
         "target": "ES2023",
         "module": "CommonJS",
         "lib": ["ES2023"],
-        "rootDir": "./src",
+        "rootDir": ".",
         "outDir": "./dist",
         "strict": true,
         "moduleResolution": "node",
@@ -16,6 +16,6 @@
         "resolveJsonModule": true,
         "incremental": true
     },
-    "include": ["src"],
+    "include": ["src/**/*"],
     "exclude": ["node_modules", "dist", "**/*.spec.ts"]
 }
