@@ -1,6 +1,6 @@
 import axios from 'axios';
-// import products from '../data/products.json';
-import products from '../data/mockProducts.json'; // minPopularityScore: 0.51, maxPopularityScore: 0.92,minPrice: 352.66, maxPrice: 951.63
+import products from '../data/products.json';
+// import products from '../data/mockProducts.json';
 import { Product } from '../interfaces/productInterface';
 import { ReadAllProductsResponse } from '../responses/productResponses';
 
@@ -42,10 +42,10 @@ const ReadAllProductsFilteredByPopularityScore = async function (min: number | u
 };
 
 const getProductsAsync = async function (): Promise<Product[]> {
-    // const goldPricePerGramUSD = await getGoldPricePerGramUSDAsync();
-    // products.forEach((product: Product) => {
-    //     product.price = (product.popularityScore + 1) * product.weight * goldPricePerGramUSD;
-    // });
+    const goldPricePerGramUSD = await getGoldPricePerGramUSDAsync();
+    products.forEach((product: Product) => {
+        product.price = (product.popularityScore + 1) * product.weight * goldPricePerGramUSD;
+    });
     return products;
 };
 

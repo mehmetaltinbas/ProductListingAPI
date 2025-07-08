@@ -1,4 +1,5 @@
 export interface Product {
+    id: number;
     name: string;
     popularityScore: number;
     weight: number;

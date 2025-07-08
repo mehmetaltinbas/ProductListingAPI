@@ -1,12 +1,20 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import fs from 'fs';
-import productController from './controllers/productController';
+import cors from 'cors';
+import './keepalive';
 
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
+
+app.use(
+    cors({
+        origin: `${process.env.UI_URL}`,
+        credentials: true,
+    }),
+);
 
 async function loadControllers() {
     const controllers = fs.readdirSync('./src/controllers');

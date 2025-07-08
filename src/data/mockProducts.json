@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "name": "Engagement Ring 1",
         "popularityScore": 0.85,
         "weight": 2.1,
@@ -11,6 +12,7 @@
         "price": 418.6
     },
     {
+        "id": 1,
         "name": "Engagement Ring 2",
         "popularityScore": 0.51,
         "weight": 3.4,
@@ -22,6 +24,7 @@
         "price": 552.67
     },
     {
+        "id": 2,
         "name": "Engagement Ring 3",
         "popularityScore": 0.92,
         "weight": 3.8,
@@ -33,6 +36,7 @@
         "price": 785.41
     },
     {
+        "id": 3,
         "name": "Engagement Ring 4",
         "popularityScore": 0.88,
         "weight": 4.5,
@@ -44,6 +48,7 @@
         "price":  910.72
     },
     {
+        "id": 4,
         "name": "Engagement Ring 5",
         "popularityScore": 0.8,
         "weight": 2.5,
@@ -55,6 +60,7 @@
         "price": 484.43
     },
     {
+        "id": 5,
         "name": "Engagement Ring 6",
         "popularityScore": 0.82,
         "weight": 1.8,
@@ -66,6 +72,7 @@
         "price": 352.66
     },
     {
+        "id": 6,
         "name": "Engagement Ring 7",
         "popularityScore": 0.7,
         "weight": 5.2,
@@ -77,6 +84,7 @@
         "price": 951.63
     },
     {
+        "id": 7,
         "name": "Engagement Ring 8",
         "popularityScore": 0.9,
         "weight": 3.7,

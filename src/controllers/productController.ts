@@ -4,6 +4,11 @@ import { ReadAllProductsResponse } from '../responses/productResponses';
 
 const router = express.Router();
 
+router.get('/keepalive', async function KeepAlive(req, res) {
+    const response = { isSuccess: true, message: 'kept alive' };
+    res.json(response);
+});
+
 router.get('/', async function ReadAllProducts(req: Request, res: Response) {
     const result = await productService.ReadAllProductsAsync();
     res.send(result);
