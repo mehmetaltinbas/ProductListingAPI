@@ -1,4 +1,4 @@
-import https from 'http';
+import https from 'https';
 import dotenv from 'dotenv';
 
 dotenv.config();
